@@ -1,0 +1,865 @@
+/* ===================================================
+   휴넷 B2C 앱 다운로드 페이지 - Figma 기반 스타일
+   =================================================== */
+
+/* --- CSS Variables (Figma 컬러/타이포 토큰) --- */
+:root {
+  --color-black: #171719;
+  --color-dark: #292A2D;
+  --color-gray-600: #46474C;
+  --color-gray-400: #70737C;
+  --color-gray-200: #E1E2E4;
+  --color-gray-100: #F6F6F6;
+  --color-white: #FFFFFF;
+  --color-red: #FA2E43;
+  --color-yellow: #FFB200;
+
+  --font: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --container-width: 1280px;
+  --container-main-width: 1920px;
+}
+
+/* --- Reset & Base --- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body {
+  font-family: var(--font);
+  background: var(--color-white);
+  color: var(--color-black);
+  overflow-x: hidden;
+}
+img { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+button { font-family: var(--font); cursor: pointer; border: none; background: none; }
+ul { list-style: none; }
+
+.page { width: 100%; }
+
+/* ===================================================
+   1. 탑바 (40px 고정 높이)
+   =================================================== */
+.topbar {
+  height: 40px;
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-gray-200);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.topbar-inner {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topbar-left, .topbar-right {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+.topbar-left span,
+.topbar-right span:not(.topbar-divider):not(.triangle) {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-gray-400);
+  letter-spacing: -0.04em;
+  line-height: 1.2em;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.topbar-dropdown,
+.topbar-consult {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  padding: 0;
+}
+.topbar-dropdown { color: var(--color-gray-400); }
+.topbar-consult { color: var(--color-red); }
+
+.triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid var(--color-gray-400);
+}
+.triangle.red { border-top-color: var(--color-red); }
+
+.topbar-menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  padding: 4px;
+}
+.topbar-menu-btn span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--color-gray-400);
+  border-radius: 2px;
+}
+
+/* 탑바 구분선 */
+.topbar-divider {
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  background: var(--color-gray-200);
+  flex-shrink: 0;
+}
+
+/* 탑바 그리드 아이콘 버튼 */
+.topbar-grid-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.topbar-grid-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.154px;
+}
+
+/* ===================================================
+   2. 히어로: 타이틀 + 앱 탭
+   =================================================== */
+.hero {
+  padding: 80px 20px 0;
+  text-align: center;
+}
+.hero-inner {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.4em;
+  letter-spacing: -0.015em;
+  color: var(--color-black);
+}
+
+/* 앱 탭 */
+.app-tabs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  background: var(--color-gray-100);
+  border-radius: 900px;
+}
+.app-tab {
+  padding: 10px 24px;
+  border-radius: 900px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-gray-600);
+  letter-spacing: -0.03em;
+  line-height: 1.6em;
+  transition: background 0.2s, color 0.2s, font-weight 0.2s;
+  white-space: nowrap;
+}
+.app-tab.active {
+  background: var(--color-black);
+  color: var(--color-white);
+  font-weight: 700;
+}
+.app-tab:hover:not(.active) {
+  background: rgba(0,0,0,0.06);
+}
+
+/* ===================================================
+   3. 메인: 좌측 텍스트 + 우측 폰 이미지
+   =================================================== */
+.section-main {
+  padding: 20px 0 100px;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+}
+.main-inner {
+  width: 1120px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  min-height: 640px;
+  overflow: visible;
+}
+
+/* Figma 스펙: flex-direction column, gap 80px */
+.main-text {
+  display: flex;
+  flex: 0 0 auto;
+  max-width: 480px;
+  padding-top: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+}
+.main-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.main-heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.4em;
+  letter-spacing: -0.0175em;
+  color: var(--color-black);
+}
+.main-desc {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6em;
+  letter-spacing: -0.028em;
+  color: var(--color-dark);
+}
+
+/* 스토어 버튼 */
+.main-store-btns {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+.store-btn {
+  display: flex;
+  align-items: center;
+  width: 260px;
+  height: 72px;
+  background: #000000;
+  border-radius: 10px;
+  padding: 0 20px;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.15s;
+  flex-shrink: 0;
+}
+.store-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+/* 좌측: 아이콘 + 텍스트 — flex:1로 나머지 공간 점유 */
+.store-btn-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+  min-width: 0;
+}
+
+/* Google Play 로고 */
+.store-btn-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Apple 로고 */
+.store-btn-apple-logo {
+  width: 28px;
+  height: 34px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* 텍스트 묶음 */
+.store-btn-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.store-btn-small {
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: -0.5px;
+  color: #FFF;
+  display: block;
+  white-space: nowrap;
+}
+.store-btn-small--muted {
+  color: rgba(255, 255, 255, 0.7);
+}
+.store-btn-wordmark {
+  height: 20px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+.store-btn-big {
+  font-family: Pretendard;
+  font-size: 22px;
+  font-weight: 600;
+  color: #FFF;
+  letter-spacing: -0.02em;
+  line-height: 1.3em;
+  display: block;
+  white-space: nowrap;
+}
+
+/* 세로 구분선 */
+.store-btn-divider {
+  width: 1px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.3);
+  flex-shrink: 0;
+  margin: 0 18px;
+}
+
+/* 화살표 */
+.store-btn-chev {
+  font-size: 22px;
+  color: #FFF;
+  flex-shrink: 0;
+  line-height: 1;
+  font-weight: 300;
+}
+
+/* 폰 이미지 영역 */
+.main-phones {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  min-height: 640px;
+  margin-left: 50px;
+  overflow: visible;
+}
+
+/* phone1: 왼쪽, 세로, 앞 — 먼저 등장 */
+.main-phones-img--1 {
+  position: absolute;
+  width: 530px;
+  max-width: 530px;
+  height: auto;
+  display: block;
+  z-index: 2;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  animation: phoneSlideIn 1.6s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
+}
+
+/* phone2: phone1 우측 절반에 겹침, 기울어짐, 뒤 */
+.main-phones-img--2 {
+  position: absolute;
+  width: 500px;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  z-index: 1;
+  left: 260px;
+  top: 50%;
+  transform: translateY(-42%) rotate(12deg);
+  transform-origin: center top;
+  opacity: 0;
+  animation: phoneSlideIn 1.6s cubic-bezier(0.22, 1, 0.36, 1) 1.3s forwards;
+}
+
+@keyframes phoneSlideIn {
+  0% {
+    opacity: 0;
+    translate: 0 50px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+/* ===================================================
+   4. 기능 4종
+   =================================================== */
+.section-features {
+  padding: 40px 0 140px;
+}
+.features-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 54px;
+}
+.feature-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+/* 순차 등장 애니메이션 */
+.feature-card--anim {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.1s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.feature-card--anim.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-icon img { width: 80px; height: 80px; object-fit: contain; }
+.feature-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4em;
+  letter-spacing: -0.032em;
+  color: var(--color-black);
+}
+.feature-desc {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6em;
+  letter-spacing: -0.028em;
+  color: var(--color-gray-400);
+}
+
+/* ===================================================
+   5. 인기 콘텐츠 섹션 (검정 배경)
+   =================================================== */
+.section-popular {
+  background: #000000;
+  padding: 140px 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  overflow: hidden;
+}
+.section-popular-header {
+  margin-bottom: 60px;
+}
+.section-popular-header,
+.section-taste-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+/* 티빙 스타일 클립 마스크 래퍼 */
+.section-label-wrap,
+.section-popular-title-wrap {
+  overflow: hidden;
+  padding-bottom: 4px; /* 하단 클립 방지 여유 */
+}
+
+.section-label {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4em;
+  letter-spacing: -0.019em;
+  color: var(--color-white);
+}
+.section-popular-title,
+.section-taste-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4em;
+  letter-spacing: -0.029em;
+  color: rgba(255,255,255,0.8);
+  text-align: center;
+}
+
+/* 애니메이션 초기 상태: 아래에 숨겨진 상태 */
+.popular-anim-item {
+  transform: translateY(100%);
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+/* 서브타이틀: 살짝 딜레이 */
+.popular-anim-item--delay {
+  transition-delay: 0.2s;
+}
+/* 등장 시 상태 */
+.popular-anim-item.is-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* 비디오 래퍼: 영상 + 검정 50% 오버레이 */
+.popular-video-wrap {
+  position: relative;
+  width: 1280px;
+  height: 660px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 0;
+  overflow: hidden;
+}
+.popular-video {
+  display: block;
+  width: 1280px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.popular-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+
+/* ===================================================
+   6. 취향저격 섹션 — 3행 무한 marquee 슬라이더
+   =================================================== */
+.section-taste {
+  background: #000000;
+  padding: 60px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  overflow: hidden;
+}
+
+/* 각 행 래퍼 — 전체 너비, overflow hidden */
+.taste-row {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 실제 이동하는 트랙 — 카드들을 가로로 나열 */
+.taste-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  will-change: transform;
+}
+
+/* 좌→우 방향 */
+.taste-row--ltr .taste-track {
+  animation: marquee-ltr 65s linear infinite;
+}
+/* 우→좌 방향 */
+.taste-row--rtl .taste-track {
+  animation: marquee-rtl 70s linear infinite;
+}
+
+@keyframes marquee-ltr {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes marquee-rtl {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+
+
+/* 카드 */
+.taste-card {
+  flex-shrink: 0;
+  width: 400px;
+  height: 203px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #1a1a1a;
+}
+.taste-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .taste-card { width: 280px; height: 142px; }
+  .section-taste {
+  background: #000000 !important; padding: 80px 0 80px; gap: 32px; }
+}
+
+/* ===================================================
+   7. 후기 배너 — 순차 등장 + 3초 전환
+   =================================================== */
+.section-testimonial {
+  width: 100%;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 160px 0;
+}
+/* 리뷰 컨테이너 */
+.testimonial-review {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  padding: 0;
+  width: 100%;
+}
+
+/* 개별 슬라이드 */
+.testimonial-slide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  pointer-events: none;
+  width: 100%;
+}
+.testimonial-slide.is-active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.testimonial-slide.is-exit {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+/* 별 */
+.testimonial-stars-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+}
+.t-star {
+  display: block;
+  width: 32px;
+  height: 32px;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.is-active .t-star { opacity: 1; transform: scale(1); }
+.is-active .t-star:nth-child(1) { transition-delay: 0.0s; }
+.is-active .t-star:nth-child(2) { transition-delay: 0.1s; }
+.is-active .t-star:nth-child(3) { transition-delay: 0.2s; }
+.is-active .t-star:nth-child(4) { transition-delay: 0.3s; }
+.is-active .t-star:nth-child(5) { transition-delay: 0.4s; }
+
+/* 텍스트: 별 다 뜬 후 등장 */
+.testimonial-quote {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4em;
+  letter-spacing: -0.022em;
+  color: var(--color-white);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.6s ease 0.55s, transform 0.6s ease 0.55s;
+}
+.is-active .testimonial-quote {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===================================================
+   8. 앱 설치 방법 (카드형)
+   =================================================== */
+.section-install {
+  background: var(--color-white);
+  padding: 120px 20px;
+  display: flex;
+  justify-content: center;
+}
+.install-card {
+  width: 1120px;
+  max-width: 100%;
+  background: var(--color-white);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0;
+}
+.install-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 1;
+}
+.install-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.install-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.4em;
+  letter-spacing: -0.0175em;
+  color: var(--color-black);
+}
+.install-form-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.install-form-label {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.6em;
+  letter-spacing: -0.028em;
+  color: var(--color-black);
+}
+.install-form {
+  position: relative;
+  width: 379px;
+  height: 52px;
+}
+.install-input {
+  width: 100%;
+  height: 100%;
+  border: 1.5px solid var(--color-black);
+  border-radius: 8px;
+  padding: 0 100px 0 16px;
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--color-black);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.install-input::placeholder { color: var(--color-gray-400); }
+.install-input:focus { border-color: var(--color-red); }
+.install-btn {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  bottom: 3px;
+  padding: 0 20px;
+  background: var(--color-black);
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font);
+  border-radius: 6px;
+  letter-spacing: -0.03em;
+  transition: background 0.2s;
+}
+.install-btn:hover { background: #333; }
+
+.install-notice {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.install-notice li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6em;
+  letter-spacing: -0.031em;
+  color: var(--color-gray-600);
+  padding-left: 1em;
+  position: relative;
+}
+.install-notice li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--color-gray-600);
+}
+.install-qr {
+  flex-shrink: 0;
+}
+.install-qr img {
+  width: 260px;
+  height: 260px;
+  object-fit: contain;
+}
+
+
+/* ===================================================
+   Responsive (768px 이하)
+   =================================================== */
+@media (max-width: 1024px) {
+  .main-inner { padding: 0 40px; flex-direction: column; min-height: auto; }
+  .main-text { max-width: 100%; gap: 40px; }
+  .features-inner { gap: 24px; }
+  .install-card { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 768px) {
+  .topbar-left span:nth-child(2),
+  .topbar-left button { display: none; }
+  .topbar-right span { display: none; }
+  .topbar-menu-btn { display: flex; }
+
+  .hero-title { font-size: 32px; }
+  .app-tabs { flex-wrap: wrap; justify-content: center; border-radius: 16px; }
+  .app-tab { font-size: 14px; padding: 8px 16px; }
+
+  .main-inner { padding: 0 20px; }
+  .main-heading { font-size: 28px; }
+  .main-desc { font-size: 16px; }
+  .store-btn { width: 100%; }
+  .main-store-btns { width: 100%; }
+
+  .features-inner { flex-direction: column; align-items: center; gap: 32px; }
+  .section-features { padding: 40px 20px 80px; }
+
+  .section-popular, .section-taste {
+  background: #000000 !important; padding: 80px 20px 0; }
+  .section-label { font-size: 24px; }
+  .section-popular-title, .section-taste-title { font-size: 18px; }
+
+  .section-testimonial { flex-direction: column; }
+  .testimonial-left, .testimonial-right { min-height: 200px; }
+  .testimonial-quote { font-size: 22px; }
+
+  .section-install { padding: 60px 20px; }
+  .install-title { font-size: 28px; }
+  .install-form { width: 100%; }
+  .install-qr img { width: 180px; height: 180px; }
+  .install-card { padding: 0; }
+}
