@@ -594,12 +594,26 @@ ul { list-style: none; }
   margin-left: -90px;
 }
 .wisdom-hero-img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 807.4px;
   max-width: none;
   height: auto;
   display: block;
   opacity: 0;
-  animation: phoneSlideIn 1.6s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
+  animation: wisdomHeroSlideIn 1.6s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
+}
+@keyframes wisdomHeroSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(calc(-50% + 50px));
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
 }
 
 /* 위즈덤스프링 탭: 둥근 모서리 단일 비디오 섹션 */
