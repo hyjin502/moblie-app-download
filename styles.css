@@ -597,7 +597,7 @@ ul { list-style: none; }
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(calc(-50% + 30px));
   width: 807.4px;
   max-width: none;
   height: auto;
@@ -608,11 +608,11 @@ ul { list-style: none; }
 @keyframes wisdomHeroSlideIn {
   0% {
     opacity: 0;
-    transform: translateY(calc(-50% + 50px));
+    transform: translateY(calc(-50% + 80px));
   }
   100% {
     opacity: 1;
-    transform: translateY(-50%);
+    transform: translateY(calc(-50% + 30px));
   }
 }
 
