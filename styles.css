@@ -248,6 +248,57 @@ ul { list-style: none; }
   gap: 12px;
   align-items: center;
 }
+/* 앱 설치 문자받기 버튼 (Google Play/App Store 버튼 대체) */
+.app-install-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  height: 78px;
+  background: #000000;
+  border-radius: 12px;
+  padding: 16px 0 16px 24px;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.15s;
+  flex-shrink: 0;
+}
+.app-install-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+.app-install-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.app-install-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.app-install-text {
+  font-family: Pretendard;
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFF;
+  letter-spacing: -0.7px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.app-install-chev-wrap {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  border-left: 1px solid rgba(219, 220, 223, 0.2);
+  padding: 0 20px 0 16px;
+  flex-shrink: 0;
+}
+.app-install-chev {
+  width: 24px;
+  height: 24px;
+}
+
+/* 스토어 버튼(구버전, Google Play/App Store 2개 — 휴넷CEO·탤런트뱅크 전용) */
 .store-btn {
   display: flex;
   align-items: center;
@@ -264,8 +315,6 @@ ul { list-style: none; }
   opacity: 0.85;
   transform: translateY(-1px);
 }
-
-/* 좌측: 아이콘 + 텍스트 — flex:1로 나머지 공간 점유 */
 .store-btn-left {
   display: flex;
   align-items: center;
@@ -273,24 +322,18 @@ ul { list-style: none; }
   flex: 1;
   min-width: 0;
 }
-
-/* Google Play 로고 */
 .store-btn-logo {
   width: 32px;
   height: 35.44px;
   object-fit: contain;
   flex-shrink: 0;
 }
-
-/* Apple 로고 */
 .store-btn-apple-logo {
   width: 32px;
   height: 32px;
   object-fit: contain;
   flex-shrink: 0;
 }
-
-/* 텍스트 묶음 */
 .store-btn-txt {
   display: flex;
   flex-direction: column;
@@ -329,8 +372,6 @@ ul { list-style: none; }
   display: block;
   white-space: nowrap;
 }
-
-/* 세로 구분선 */
 .store-btn-divider {
   width: 1px;
   height: 24px;
@@ -338,8 +379,6 @@ ul { list-style: none; }
   flex-shrink: 0;
   margin: 0 20px;
 }
-
-/* 화살표 */
 .store-btn-chev {
   width: 24px;
   height: 24px;
@@ -1166,6 +1205,7 @@ ul { list-style: none; }
   .main-inner { padding: 0 20px; }
   .main-heading { font-size: 28px; }
   .main-desc { font-size: 16px; }
+  .app-install-btn { width: 100%; }
   .store-btn { width: 100%; }
   .main-store-btns { width: 100%; }
 
