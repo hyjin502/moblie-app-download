@@ -63,15 +63,18 @@
           휴넷으로 이어지는 학습
         </h1>
         <div class="app-tabs" role="tablist">
-          <button type="button" class="app-tab active" role="tab">휴넷</button>
-          <button type="button" class="app-tab" role="tab">휴넷CEO</button>
-          <button type="button" class="app-tab" role="tab">리더십저니</button>
-          <button type="button" class="app-tab" role="tab">학점은행</button>
-          <button type="button" class="app-tab" role="tab">탤런트뱅크</button>
+          <button type="button" class="app-tab active" role="tab" data-tab="hunet">휴넷</button>
+          <button type="button" class="app-tab" role="tab" data-tab="ceo">휴넷CEO</button>
+          <button type="button" class="app-tab" role="tab" data-tab="leadership">리더십저니</button>
+          <button type="button" class="app-tab" role="tab" data-tab="hakjum">학점은행</button>
+          <button type="button" class="app-tab" role="tab" data-tab="wisdom">위즈덤스프링</button>
+          <button type="button" class="app-tab" role="tab" data-tab="talentbank">탤런트뱅크</button>
         </div>
       </div>
     </section>
 
+    <!-- ===================== 탭 패널: 휴넷 ===================== -->
+    <div class="tab-panel" data-tab-panel="hunet">
     <!-- 메인: 좌측 텍스트 + 우측 휴대폰 2대 -->
     <section class="section-main">
       <div class="main-inner">
@@ -94,29 +97,29 @@
                 <img class="store-btn-logo" alt="" src="./img/btn/google.svg" />
                 <span class="store-btn-txt">
                   <span class="store-btn-small">GET IT ON</span>
-                  <img class="store-btn-wordmark" alt="Google Play" src="./img/btn/googleplay.svg" />
+                  <img class="store-btn-wordmark" alt="Google Play" src="./img/btn/google Play.svg" />
                 </span>
               </span>
               <span class="store-btn-divider" aria-hidden="true"></span>
-              <span class="store-btn-chev" aria-hidden="true">→</span>
+              <img class="store-btn-chev" src="./img/btn/ArrowRight.svg" alt="" aria-hidden="true" />
             </a>
             <!-- App Store 버튼 -->
             <a class="store-btn" href="#" aria-label="App Store로 이동">
               <span class="store-btn-left">
                 <img class="store-btn-apple-logo" alt="" src="./img/btn/Apple.svg" />
-                <span class="store-btn-txt">
+                <span class="store-btn-txt store-btn-txt--tight">
                   <span class="store-btn-small store-btn-small--muted">Download on the</span>
                   <span class="store-btn-big">App Store</span>
                 </span>
               </span>
               <span class="store-btn-divider" aria-hidden="true"></span>
-              <span class="store-btn-chev" aria-hidden="true">→</span>
+              <img class="store-btn-chev" src="./img/btn/ArrowRight.svg" alt="" aria-hidden="true" />
             </a>
           </div>
         </div>
         <div class="main-phones">
-          <img src="./img/phone/phone2.png" alt="휴넷 앱 화면 2" class="main-phones-img main-phones-img--2" />
-          <img src="./img/phone/phone1.png" alt="휴넷 앱 화면 1" class="main-phones-img main-phones-img--1" />
+          <img src="./img/hunet/Phone2.png" alt="휴넷 앱 화면 2" class="main-phones-img main-phones-img--2" />
+          <img src="./img/hunet/Phone1.png" alt="휴넷 앱 화면 1" class="main-phones-img main-phones-img--1" />
         </div>
       </div>
     </section>
@@ -126,28 +129,28 @@
       <div class="container features-inner">
         <div class="feature-card feature-card--anim" data-delay="0">
           <div class="feature-icon feature-icon-video" aria-hidden="true">
-            <img src="./img/icon/icon1_video.png" alt="" width="80" height="80" />
+            <img src="./img/hunet/icon1_video.png" alt="" width="80" height="80" />
           </div>
           <h3 class="feature-title">모바일 강의</h3>
           <p class="feature-desc">이동 중에도 끊김 없이 강의 수강</p>
         </div>
         <div class="feature-card feature-card--anim" data-delay="250">
           <div class="feature-icon feature-icon-compass" aria-hidden="true">
-            <img src="./img/icon/icon2_compass.png" alt="" width="80" height="80" />
+            <img src="./img/hunet/icon2_compass.png" alt="" width="80" height="80" />
           </div>
           <h3 class="feature-title">맞춤 강좌 추천</h3>
           <p class="feature-desc">관심 분야에 맞는 강의 추천</p>
         </div>
         <div class="feature-card feature-card--anim" data-delay="500">
           <div class="feature-icon feature-icon-folder" aria-hidden="true">
-            <img src="./img/icon/icon3_folder.png" alt="" width="80" height="80" />
+            <img src="./img/hunet/icon3_folder.png" alt="" width="80" height="80" />
           </div>
           <h3 class="feature-title">최신 트렌드 강의</h3>
           <p class="feature-desc">리더십 · 직무 · AI 강의 제공</p>
         </div>
         <div class="feature-card feature-card--anim" data-delay="750">
           <div class="feature-icon feature-icon-notification" aria-hidden="true">
-            <img src="./img/icon/icon4_Notification.png" alt="" width="80" height="80" />
+            <img src="./img/hunet/icon4_Notification.png" alt="" width="80" height="80" />
           </div>
           <h3 class="feature-title">학습 알람</h3>
           <p class="feature-desc">중요 학습 일정 알림</p>
@@ -172,7 +175,7 @@
       <div class="popular-video-wrap">
         <video
           class="popular-video"
-          src="./Vedio.mp4"
+          src="./img/hunet/Vedio.mp4"
           width="1280"
           autoplay
           muted
@@ -200,77 +203,77 @@
       <!-- 1행: 1_01 ~ 1_09 (좌→우) -->
       <div class="taste-row taste-row--ltr">
         <div class="taste-track">
-          <div class="taste-card"><img src="./img/thumbnail/1_01.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/1_02.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/1_03.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/1_04.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/1_05.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/1_06.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/1_07.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/1_08.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/1_09.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/1_01.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/1_02.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/1_03.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/1_04.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/1_05.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/1_06.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/1_07.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/1_08.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/1_09.png" alt="" /></div>
           <!-- 무한 루프용 복제 -->
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/1_01.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/1_02.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/1_03.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/1_04.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/1_05.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/1_06.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/1_07.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/1_08.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/1_09.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/1_01.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/1_02.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/1_03.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/1_04.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/1_05.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/1_06.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/1_07.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/1_08.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/1_09.png" alt="" /></div>
         </div>
       </div>
 
       <!-- 2행: 2_01 ~ 2_10 (우→좌) -->
       <div class="taste-row taste-row--rtl">
         <div class="taste-track">
-          <div class="taste-card"><img src="./img/thumbnail/2_01.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/2_02.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/2_03.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/2_04.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/2_05.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/2_06.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/2_07.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/2_08.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/2_09.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/2_10.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/2_01.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/2_02.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/2_03.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/2_04.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/2_05.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/2_06.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/2_07.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/2_08.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/2_09.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/2_10.png" alt="" /></div>
           <!-- 무한 루프용 복제 -->
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/2_01.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/2_02.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/2_03.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/2_04.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/2_05.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/2_06.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/2_07.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/2_08.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/2_09.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/2_10.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/2_01.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/2_02.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/2_03.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/2_04.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/2_05.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/2_06.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/2_07.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/2_08.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/2_09.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/2_10.png" alt="" /></div>
         </div>
       </div>
 
       <!-- 3행: 3_01 ~ 3_09 (좌→우) -->
       <div class="taste-row taste-row--ltr">
         <div class="taste-track">
-          <div class="taste-card"><img src="./img/thumbnail/3_01.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/3_02.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/3_03.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/3_04.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/3_05.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/3_06.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/3_07.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/3_08.png" alt="" /></div>
-          <div class="taste-card"><img src="./img/thumbnail/3_09.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/3_01.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/3_02.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/3_03.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/3_04.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/3_05.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/3_06.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/3_07.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/3_08.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/hunet/thumb/3_09.png" alt="" /></div>
           <!-- 무한 루프용 복제 -->
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/3_01.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/3_02.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/3_03.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/3_04.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/3_05.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/3_06.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/3_07.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/3_08.png" alt="" /></div>
-          <div class="taste-card" aria-hidden="true"><img src="./img/thumbnail/3_09.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/3_01.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/3_02.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/3_03.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/3_04.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/3_05.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/3_06.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/3_07.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/3_08.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/hunet/thumb/3_09.png" alt="" /></div>
         </div>
       </div>
     </section>
@@ -280,7 +283,7 @@
       <div class="testimonial-review">
 
           <!-- 리뷰 1 -->
-          <div class="testimonial-slide" id="review-1">
+          <div class="testimonial-slide">
             <div class="testimonial-stars-wrap">
               <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
               <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
@@ -292,7 +295,7 @@
           </div>
 
           <!-- 리뷰 2 -->
-          <div class="testimonial-slide" id="review-2">
+          <div class="testimonial-slide">
             <div class="testimonial-stars-wrap">
               <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
               <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
@@ -327,12 +330,1135 @@
           </ul>
         </div>
         <div class="install-qr">
-          <img src="./img/QR_hunet.png" alt="휴넷 앱 다운로드 QR" />
+          <img src="./img/hunet/QR_hunet.png" alt="휴넷 앱 다운로드 QR" />
         </div>
       </div>
     </section>
+    </div>
+    <!-- ===================== // 탭 패널: 휴넷 ===================== -->
+
+    <!-- ===================== 탭 패널: 휴넷CEO ===================== -->
+    <div class="tab-panel" data-tab-panel="ceo" hidden>
+    <!-- 메인: 좌측 텍스트 + 우측 휴대폰 -->
+    <section class="section-main">
+      <div class="main-inner">
+        <div class="main-text">
+          <div class="main-text-content">
+            <h2 class="main-heading">
+              엄선된 프리미엄 인사이트<br />
+              믿고 보는 휴넷CEO
+            </h2>
+            <p class="main-desc">
+              임원의 성장과 비즈니스 성공을 위한 구독형 씽크탱크.<br />
+              비즈니스 리뷰, 영상, 칼럼 등 검증된 인사이트를<br />
+              지금 경험해보세요.
+            </p>
+          </div>
+          <div class="main-store-btns">
+            <!-- Google Play 버튼 -->
+            <a class="store-btn" href="#" aria-label="Google Play로 이동">
+              <span class="store-btn-left">
+                <img class="store-btn-logo" alt="" src="./img/btn/google.svg" />
+                <span class="store-btn-txt">
+                  <span class="store-btn-small">GET IT ON</span>
+                  <img class="store-btn-wordmark" alt="Google Play" src="./img/btn/google Play.svg" />
+                </span>
+              </span>
+              <span class="store-btn-divider" aria-hidden="true"></span>
+              <img class="store-btn-chev" src="./img/btn/ArrowRight.svg" alt="" aria-hidden="true" />
+            </a>
+            <!-- App Store 버튼 -->
+            <a class="store-btn" href="#" aria-label="App Store로 이동">
+              <span class="store-btn-left">
+                <img class="store-btn-apple-logo" alt="" src="./img/btn/Apple.svg" />
+                <span class="store-btn-txt store-btn-txt--tight">
+                  <span class="store-btn-small store-btn-small--muted">Download on the</span>
+                  <span class="store-btn-big">App Store</span>
+                </span>
+              </span>
+              <span class="store-btn-divider" aria-hidden="true"></span>
+              <img class="store-btn-chev" src="./img/btn/ArrowRight.svg" alt="" aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+        <div class="main-phones main-phones--ceo">
+          <div class="ceo-hero-visual">
+            <!-- 1) 배경: 콘텐츠 썸네일 콜라주 — 먼저 등장 -->
+            <div class="ceo-hero-bg">
+              <img src="./img/ceo/hero_bg.png" alt="휴넷CEO 콘텐츠 썸네일 모음" />
+            </div>
+            <!-- 2) 폰: 배경보다 늦게 등장 -->
+            <div class="ceo-hero-phone-clip">
+              <div class="ceo-phone-body"><img src="./img/ceo/hero_phone_body.png" alt="" /></div>
+              <div class="ceo-phone-screen"><img src="./img/ceo/hero_phone_screen.png" alt="휴넷CEO 앱 화면" /></div>
+              <div class="ceo-phone-frame"><img src="./img/ceo/hero_phone_frame.png" alt="" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 기능 4종: 아이콘 + 제목 + 설명 -->
+    <section class="section-features">
+      <div class="container features-inner">
+        <div class="feature-card feature-card--anim" data-delay="0">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/ceo/icon_eye.svg" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">비즈니스리뷰</h3>
+          <p class="feature-desc">매일 보는 심층 분석 아티클</p>
+        </div>
+        <div class="feature-card feature-card--anim" data-delay="250">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/ceo/icon_play_circle.svg" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">오디오 / 영상 콘텐츠</h3>
+          <p class="feature-desc">관심 분야에 맞는 강의 추천</p>
+        </div>
+        <div class="feature-card feature-card--anim" data-delay="500">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/ceo/icon_folder.png" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">CEO리포트</h3>
+          <p class="feature-desc">심층분석 월간 프리미엄 보고서</p>
+        </div>
+        <div class="feature-card feature-card--anim" data-delay="750">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/ceo/icon_bookmark.svg" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">관심 콘텐츠 저장</h3>
+          <p class="feature-desc">콘텐츠를 저장하고 언제든 확인</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 휴넷CEO 먼슬리포럼 섹션 -->
+    <section class="section-popular">
+      <div class="section-popular-header">
+        <div class="section-label-wrap">
+          <div class="section-label popular-anim-item">휴넷CEO 먼슬리포럼</div>
+        </div>
+        <div class="section-popular-title-wrap">
+          <h2 class="section-popular-title popular-anim-item popular-anim-item--delay">
+            매월 1회, 리더의 아침을 깨우는<br />
+            CEO들과의 조찬포럼
+          </h2>
+        </div>
+      </div>
+      <div class="popular-video-wrap">
+        <video
+          class="popular-video"
+          src="./img/ceo/hunetceo.mp4"
+          width="1280"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+        <div class="popular-video-overlay" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 취향저격 섹션 -->
+    <section class="section-taste">
+      <div class="section-taste-header">
+        <div class="section-label-wrap">
+          <div class="section-label popular-anim-item">무엇을 원하든 취향저격</div>
+        </div>
+        <div class="section-popular-title-wrap">
+          <h2 class="section-taste-title popular-anim-item popular-anim-item--delay">
+            신문보다 깊게 리포트보다 쉽게,<br />
+            전문가들의 인사이트를 담은 심층 분석 아티클
+          </h2>
+        </div>
+      </div>
+
+      <!-- 1행: 좌→우 -->
+      <div class="taste-row taste-row--ltr">
+        <div class="taste-track">
+          <div class="taste-card"><img src="./img/ceo/thumb/1_01.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/ceo/thumb/1_02.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/ceo/thumb/1_03.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/ceo/thumb/1_04.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/ceo/thumb/1_05.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/ceo/thumb/1_06.png" alt="" /></div>
+          <!-- 무한 루프용 복제 -->
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/1_01.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/1_02.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/1_03.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/1_04.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/1_05.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/1_06.png" alt="" /></div>
+        </div>
+      </div>
+
+      <!-- 2행: 우→좌 -->
+      <div class="taste-row taste-row--rtl">
+        <div class="taste-track">
+          <div class="taste-card"><img src="./img/ceo/thumb/2_01.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/ceo/thumb/2_02.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/ceo/thumb/2_03.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/ceo/thumb/2_04.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/ceo/thumb/2_05.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/ceo/thumb/2_06.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/ceo/thumb/2_07.png" alt="" /></div>
+          <!-- 무한 루프용 복제 -->
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/2_01.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/2_02.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/2_03.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/2_04.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/2_05.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/2_06.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/2_07.png" alt="" /></div>
+        </div>
+      </div>
+
+      <!-- 3행: 좌→우 -->
+      <div class="taste-row taste-row--ltr">
+        <div class="taste-track">
+          <div class="taste-card"><img src="./img/ceo/thumb/3_01.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/ceo/thumb/3_02.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/ceo/thumb/3_03.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/ceo/thumb/3_04.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/ceo/thumb/3_05.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/ceo/thumb/3_06.png" alt="" /></div>
+          <!-- 무한 루프용 복제 -->
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/3_01.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/3_02.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/3_03.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/3_04.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/3_05.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/ceo/thumb/3_06.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 후기 배너 -->
+    <section class="section-testimonial">
+      <div class="testimonial-review">
+          <div class="testimonial-slide">
+            <div class="testimonial-stars-wrap">
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+            </div>
+            <p class="testimonial-quote">새롭게 올라오는 콘텐츠를 바로 찾아볼 수 있어요</p>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="testimonial-stars-wrap">
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+            </div>
+            <p class="testimonial-quote">실제 리더십 발휘에 아이디어를 많이 얻습니다</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- 앱 설치 방법 -->
+    <section class="section-install">
+      <div class="install-card">
+        <div class="install-content">
+          <div class="install-text-block">
+            <h2 class="install-title">휴넷CEO 앱 설치 방법</h2>
+            <div class="install-form-block">
+              <p class="install-form-label">앱 설치 문자받기</p>
+              <div class="install-form">
+                <input type="tel" class="install-input" placeholder="휴대폰 번호를 입력해주세요" maxlength="11" />
+                <button type="button" class="install-btn">SMS 받기</button>
+              </div>
+            </div>
+          </div>
+          <ul class="install-notice">
+            <li>문자 전송은 무료입니다.</li>
+            <li>문자 전송 시 입력하신 번호는 URL 전송용으로만 사용됩니다.</li>
+            <li>아이폰 앱 스토어에서는 다운로드 받으실 수 없습니다.</li>
+          </ul>
+        </div>
+        <div class="install-qr">
+          <img src="./img/ceo/qr.png" alt="휴넷CEO 앱 다운로드 QR" />
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- ===================== // 탭 패널: 휴넷CEO ===================== -->
+
+    <!-- ===================== 탭 패널: 학점은행 ===================== -->
+    <div class="tab-panel" data-tab-panel="hakjum" hidden>
+    <!-- 메인: 좌측 텍스트 + 우측 휴대폰 2대 -->
+    <section class="section-main">
+      <div class="main-inner">
+        <div class="main-text">
+          <div class="main-text-content">
+            <h2 class="main-heading">
+              Smart 학점은행<br />
+              휴넷평생교육원 모바일
+            </h2>
+            <p class="main-desc">
+              PC와 동일하게 강의를 수강하고 출석까지 인정받으며,<br />
+              진도 확인부터 시험 일정 안내까지<br />
+              나의 학습을 모바일에서 편리하게 관리해보세요.
+            </p>
+          </div>
+          <div class="main-store-btns">
+            <!-- Google Play 버튼 -->
+            <a class="store-btn" href="#" aria-label="Google Play로 이동">
+              <span class="store-btn-left">
+                <img class="store-btn-logo" alt="" src="./img/btn/google.svg" />
+                <span class="store-btn-txt">
+                  <span class="store-btn-small">GET IT ON</span>
+                  <img class="store-btn-wordmark" alt="Google Play" src="./img/btn/google Play.svg" />
+                </span>
+              </span>
+              <span class="store-btn-divider" aria-hidden="true"></span>
+              <img class="store-btn-chev" src="./img/btn/ArrowRight.svg" alt="" aria-hidden="true" />
+            </a>
+            <!-- App Store 버튼 -->
+            <a class="store-btn" href="#" aria-label="App Store로 이동">
+              <span class="store-btn-left">
+                <img class="store-btn-apple-logo" alt="" src="./img/btn/Apple.svg" />
+                <span class="store-btn-txt store-btn-txt--tight">
+                  <span class="store-btn-small store-btn-small--muted">Download on the</span>
+                  <span class="store-btn-big">App Store</span>
+                </span>
+              </span>
+              <span class="store-btn-divider" aria-hidden="true"></span>
+              <img class="store-btn-chev" src="./img/btn/ArrowRight.svg" alt="" aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+        <div class="main-phones main-phones--hakjum">
+          <div class="hakjum-hero-visual">
+            <img src="./img/hakjum/hero_shadow.png" alt="" class="hakjum-hero-shadow" />
+            <img src="./img/hakjum/phone1.png" alt="학점은행 앱 화면 1" class="hakjum-hero-phone hakjum-hero-phone--a" />
+            <img src="./img/hakjum/phone2.png" alt="학점은행 앱 화면 2" class="hakjum-hero-phone hakjum-hero-phone--b" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 기능 4종: 아이콘 + 제목 + 설명 -->
+    <section class="section-features">
+      <div class="container features-inner">
+        <div class="feature-card feature-card--anim" data-delay="0">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/hakjum/icon1.png" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">모바일 학습</h3>
+          <p class="feature-desc">PC처럼 수강하고 출석 인정</p>
+        </div>
+        <div class="feature-card feature-card--anim" data-delay="250">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/hakjum/icon2.png" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">진도 확인</h3>
+          <p class="feature-desc">학습 현황을 한눈에 확인</p>
+        </div>
+        <div class="feature-card feature-card--anim" data-delay="500">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/hakjum/icon3.png" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">일정 관리</h3>
+          <p class="feature-desc">시험·과제 일정 체크</p>
+        </div>
+        <div class="feature-card feature-card--anim" data-delay="750">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/hakjum/icon_download.svg" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">다운로드 수강</h3>
+          <p class="feature-desc">강의를 저장하고 편리하게 학습</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 수강생 성공 스토리 섹션 -->
+    <section class="section-popular">
+      <div class="section-popular-header">
+        <div class="section-label-wrap">
+          <div class="section-label popular-anim-item">수강생 성공 스토리</div>
+        </div>
+        <div class="section-popular-title-wrap">
+          <h2 class="section-popular-title popular-anim-item popular-anim-item--delay">
+            최선을 다하신 학습자분들께 성적장학금을 통해<br />
+            응원의 마음을 전합니다
+          </h2>
+        </div>
+      </div>
+      <div class="popular-video-wrap">
+        <video
+          class="popular-video"
+          src="./img/hakjum/hakjum.mp4"
+          width="1280"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+        <div class="popular-video-overlay" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 추천 이유 6종 카드 섹션 -->
+    <section class="section-recommend">
+      <div class="section-taste-header">
+        <div class="section-label-wrap">
+          <h2 class="section-label popular-anim-item">
+            왜 많은 수강생분들이<br />
+            휴넷평생교육원을 추천할까요?
+          </h2>
+        </div>
+      </div>
+      <div class="recommend-row">
+        <div class="recommend-track">
+          <div class="recommend-card">
+            <div class="recommend-card-img"><img src="./img/hakjum/card1.png" alt="" /></div>
+            <div class="recommend-card-text">
+              <p class="recommend-card-desc">복잡한 이수조건 NO! 미수료 걱정도 NO!</p>
+              <p class="recommend-card-stat">이수율 99.6%</p>
+            </div>
+          </div>
+          <div class="recommend-card">
+            <div class="recommend-card-img"><img src="./img/hakjum/card2.png" alt="" /></div>
+            <div class="recommend-card-text">
+              <p class="recommend-card-desc">평균 경력 7년 이상<br />가입즉시 전문 컨설팅 제공!</p>
+              <p class="recommend-card-stat">1:1 담당자 매칭</p>
+            </div>
+          </div>
+          <div class="recommend-card">
+            <div class="recommend-card-img"><img src="./img/hakjum/card3.png" alt="" /></div>
+            <div class="recommend-card-text">
+              <p class="recommend-card-desc">범용공인인증서 없이<br />언제 어디서나 쉽게 수강</p>
+              <p class="recommend-card-stat">휴대폰 인증</p>
+            </div>
+          </div>
+          <div class="recommend-card">
+            <div class="recommend-card-img"><img src="./img/hakjum/card4.png" alt="" /></div>
+            <div class="recommend-card-text">
+              <p class="recommend-card-desc">학습부터 과제, 실습걱정 NO<br />로그인 즉시 다운로드!</p>
+              <p class="recommend-card-stat">무료 가이드북 제공</p>
+            </div>
+          </div>
+          <div class="recommend-card">
+            <div class="recommend-card-img"><img src="./img/hakjum/card5.png" alt="" /></div>
+            <div class="recommend-card-text">
+              <p class="recommend-card-desc">자꾸 까먹는 학사일정<br />걱정없이 자동으로 학사관리</p>
+              <p class="recommend-card-stat">학습 알리미</p>
+            </div>
+          </div>
+          <div class="recommend-card">
+            <div class="recommend-card-img"><img src="./img/hakjum/card6.png" alt="" /></div>
+            <div class="recommend-card-text">
+              <p class="recommend-card-desc">교과목 수료만 해도<br />휴넷에선 더블 스펙업!</p>
+              <p class="recommend-card-stat">학점은행형 민간자격증</p>
+            </div>
+          </div>
+          <!-- 무한 루프용 복제 -->
+          <div class="recommend-card" aria-hidden="true">
+            <div class="recommend-card-img"><img src="./img/hakjum/card1.png" alt="" /></div>
+            <div class="recommend-card-text">
+              <p class="recommend-card-desc">복잡한 이수조건 NO! 미수료 걱정도 NO!</p>
+              <p class="recommend-card-stat">이수율 99.6%</p>
+            </div>
+          </div>
+          <div class="recommend-card" aria-hidden="true">
+            <div class="recommend-card-img"><img src="./img/hakjum/card2.png" alt="" /></div>
+            <div class="recommend-card-text">
+              <p class="recommend-card-desc">평균 경력 7년 이상<br />가입즉시 전문 컨설팅 제공!</p>
+              <p class="recommend-card-stat">1:1 담당자 매칭</p>
+            </div>
+          </div>
+          <div class="recommend-card" aria-hidden="true">
+            <div class="recommend-card-img"><img src="./img/hakjum/card3.png" alt="" /></div>
+            <div class="recommend-card-text">
+              <p class="recommend-card-desc">범용공인인증서 없이<br />언제 어디서나 쉽게 수강</p>
+              <p class="recommend-card-stat">휴대폰 인증</p>
+            </div>
+          </div>
+          <div class="recommend-card" aria-hidden="true">
+            <div class="recommend-card-img"><img src="./img/hakjum/card4.png" alt="" /></div>
+            <div class="recommend-card-text">
+              <p class="recommend-card-desc">학습부터 과제, 실습걱정 NO<br />로그인 즉시 다운로드!</p>
+              <p class="recommend-card-stat">무료 가이드북 제공</p>
+            </div>
+          </div>
+          <div class="recommend-card" aria-hidden="true">
+            <div class="recommend-card-img"><img src="./img/hakjum/card5.png" alt="" /></div>
+            <div class="recommend-card-text">
+              <p class="recommend-card-desc">자꾸 까먹는 학사일정<br />걱정없이 자동으로 학사관리</p>
+              <p class="recommend-card-stat">학습 알리미</p>
+            </div>
+          </div>
+          <div class="recommend-card" aria-hidden="true">
+            <div class="recommend-card-img"><img src="./img/hakjum/card6.png" alt="" /></div>
+            <div class="recommend-card-text">
+              <p class="recommend-card-desc">교과목 수료만 해도<br />휴넷에선 더블 스펙업!</p>
+              <p class="recommend-card-stat">학점은행형 민간자격증</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 후기 배너 -->
+    <section class="section-testimonial section-testimonial--no-top-pad">
+      <div class="testimonial-review">
+          <div class="testimonial-slide">
+            <div class="testimonial-stars-wrap">
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+            </div>
+            <p class="testimonial-quote">학습부터 출석, 진도, 일정까지 모바일에서 한 번에 관리합니다</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- 앱 설치 방법 -->
+    <section class="section-install">
+      <div class="install-card">
+        <div class="install-content">
+          <div class="install-text-block">
+            <h2 class="install-title">학점은행 앱 설치 방법</h2>
+            <div class="install-form-block">
+              <p class="install-form-label">앱 설치 문자받기</p>
+              <div class="install-form">
+                <input type="tel" class="install-input" placeholder="휴대폰 번호를 입력해주세요" maxlength="11" />
+                <button type="button" class="install-btn">SMS 받기</button>
+              </div>
+            </div>
+          </div>
+          <ul class="install-notice">
+            <li>문자 전송은 무료입니다.</li>
+            <li>문자 전송 시 입력하신 번호는 URL 전송용으로만 사용됩니다.</li>
+            <li>아이폰 앱 스토어에서는 다운로드 받으실 수 없습니다.</li>
+          </ul>
+        </div>
+        <div class="install-qr">
+          <img src="./img/hakjum/qr.png" alt="학점은행 앱 다운로드 QR" />
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- ===================== // 탭 패널: 학점은행 ===================== -->
+
+    <!-- ===================== 탭 패널: 리더십저니 ===================== -->
+    <div class="tab-panel" data-tab-panel="leadership" hidden>
+    <!-- 메인: 좌측 텍스트 + 우측 휴대폰 2대 -->
+    <section class="section-main">
+      <div class="main-inner">
+        <div class="main-text">
+          <div class="main-text-content">
+            <h2 class="main-heading">
+              리더의 고민을 성장의 기회로<br />
+              매일 이어지는 리더십저니
+            </h2>
+            <p class="main-desc">
+              리더십 아티클, 데일리 인사이트, 코칭, 북클럽까지<br />
+              실무와 리더십 사이에서 고민하는 리더를 위한<br />
+              성장 솔루션을 지금 경험해보세요.
+            </p>
+          </div>
+          <div class="main-store-btns">
+            <!-- Google Play 버튼 -->
+            <a class="store-btn" href="#" aria-label="Google Play로 이동">
+              <span class="store-btn-left">
+                <img class="store-btn-logo" alt="" src="./img/btn/google.svg" />
+                <span class="store-btn-txt">
+                  <span class="store-btn-small">GET IT ON</span>
+                  <img class="store-btn-wordmark" alt="Google Play" src="./img/btn/google Play.svg" />
+                </span>
+              </span>
+              <span class="store-btn-divider" aria-hidden="true"></span>
+              <img class="store-btn-chev" src="./img/btn/ArrowRight.svg" alt="" aria-hidden="true" />
+            </a>
+            <!-- App Store 버튼 -->
+            <a class="store-btn" href="#" aria-label="App Store로 이동">
+              <span class="store-btn-left">
+                <img class="store-btn-apple-logo" alt="" src="./img/btn/Apple.svg" />
+                <span class="store-btn-txt store-btn-txt--tight">
+                  <span class="store-btn-small store-btn-small--muted">Download on the</span>
+                  <span class="store-btn-big">App Store</span>
+                </span>
+              </span>
+              <span class="store-btn-divider" aria-hidden="true"></span>
+              <img class="store-btn-chev" src="./img/btn/ArrowRight.svg" alt="" aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+        <div class="main-phones main-phones--leadership">
+          <div class="leadership-hero-visual">
+            <img src="./img/leadership/phone1.png" alt="리더십저니 앱 화면 1" class="leadership-hero-phone leadership-hero-phone--a" />
+            <img src="./img/leadership/phone2.png" alt="리더십저니 앱 화면 2" class="leadership-hero-phone leadership-hero-phone--b" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 기능 4종: 아이콘 + 제목 + 설명 -->
+    <section class="section-features">
+      <div class="container features-inner">
+        <div class="feature-card feature-card--anim" data-delay="0">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/leadership/icon_clipboard.svg" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">데일리 리더십 Tips</h3>
+          <p class="feature-desc">매일 아침 리더십 인사이트</p>
+        </div>
+        <div class="feature-card feature-card--anim" data-delay="250">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/leadership/icon_folder.svg" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">리더십 라이브러리</h3>
+          <p class="feature-desc">리더십 콘텐츠 아카이브</p>
+        </div>
+        <div class="feature-card feature-card--anim" data-delay="500">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/leadership/icon_chat.svg" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">리더스 라운지</h3>
+          <p class="feature-desc">리더들의 성장 커뮤니티</p>
+        </div>
+        <div class="feature-card feature-card--anim" data-delay="750">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/leadership/icon_profile.svg" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">코칭 &amp; 북클럽</h3>
+          <p class="feature-desc">코칭과 독서로 만드는 성장 루틴</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 리더십저니 인기 콘텐츠 섹션 -->
+    <section class="section-popular">
+      <div class="section-popular-header">
+        <div class="section-label-wrap">
+          <div class="section-label popular-anim-item">리더십저니 인기 콘텐츠</div>
+        </div>
+        <div class="section-popular-title-wrap">
+          <h2 class="section-popular-title popular-anim-item popular-anim-item--delay">
+            리더십 터닝포인트를 만난<br />
+            현업 팀장의 생생한 수강 후기를 확인하세요
+          </h2>
+        </div>
+      </div>
+      <div class="popular-video-wrap">
+        <img src="./img/leadership/popular.png" alt="리더십저니 인기 콘텐츠" class="popular-video" />
+        <div class="popular-video-overlay" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 취향저격 섹션 -->
+    <section class="section-taste">
+      <div class="section-taste-header">
+        <div class="section-label-wrap">
+          <div class="section-label popular-anim-item">최신 업로드 콘텐츠</div>
+        </div>
+        <div class="section-popular-title-wrap">
+          <h2 class="section-taste-title popular-anim-item popular-anim-item--delay">
+            위대한 리더로 가는 리더십 성장 여정,<br />
+            지금 리더십저니를 시작하세요
+          </h2>
+        </div>
+      </div>
+
+      <!-- 1행: 좌→우 -->
+      <div class="taste-row taste-row--ltr">
+        <div class="taste-track">
+          <div class="taste-card"><img src="./img/leadership/thumb/1_01.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/leadership/thumb/1_02.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/leadership/thumb/1_03.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/leadership/thumb/1_04.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/leadership/thumb/1_05.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/leadership/thumb/1_06.png" alt="" /></div>
+          <!-- 무한 루프용 복제 -->
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/1_01.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/1_02.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/1_03.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/1_04.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/1_05.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/1_06.png" alt="" /></div>
+        </div>
+      </div>
+
+      <!-- 2행: 우→좌 -->
+      <div class="taste-row taste-row--rtl">
+        <div class="taste-track">
+          <div class="taste-card"><img src="./img/leadership/thumb/2_01.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/leadership/thumb/2_02.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/leadership/thumb/2_03.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/leadership/thumb/2_04.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/leadership/thumb/2_05.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/leadership/thumb/2_06.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/leadership/thumb/2_07.png" alt="" /></div>
+          <!-- 무한 루프용 복제 -->
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/2_01.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/2_02.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/2_03.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/2_04.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/2_05.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/2_06.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/2_07.png" alt="" /></div>
+        </div>
+      </div>
+
+      <!-- 3행: 좌→우 -->
+      <div class="taste-row taste-row--ltr">
+        <div class="taste-track">
+          <div class="taste-card"><img src="./img/leadership/thumb/3_01.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/leadership/thumb/3_02.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/leadership/thumb/3_03.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/leadership/thumb/3_04.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/leadership/thumb/3_05.png" alt="" /></div>
+          <div class="taste-card"><img src="./img/leadership/thumb/3_06.png" alt="" /></div>
+          <!-- 무한 루프용 복제 -->
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/3_01.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/3_02.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/3_03.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/3_04.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/3_05.png" alt="" /></div>
+          <div class="taste-card" aria-hidden="true"><img src="./img/leadership/thumb/3_06.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 후기 배너 -->
+    <section class="section-testimonial">
+      <div class="testimonial-review">
+          <div class="testimonial-slide">
+            <div class="testimonial-stars-wrap">
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+            </div>
+            <p class="testimonial-quote">리더의 성장을 매일의 루틴으로 만듭니다</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- 앱 설치 방법 -->
+    <section class="section-install">
+      <div class="install-card">
+        <div class="install-content">
+          <div class="install-text-block">
+            <h2 class="install-title">리더십저니 앱 설치 방법</h2>
+            <div class="install-form-block">
+              <p class="install-form-label">앱 설치 문자받기</p>
+              <div class="install-form">
+                <input type="tel" class="install-input" placeholder="휴대폰 번호를 입력해주세요" maxlength="11" />
+                <button type="button" class="install-btn">SMS 받기</button>
+              </div>
+            </div>
+          </div>
+          <ul class="install-notice">
+            <li>문자 전송은 무료입니다.</li>
+            <li>문자 전송 시 입력하신 번호는 URL 전송용으로만 사용됩니다.</li>
+            <li>아이폰 앱 스토어에서는 다운로드 받으실 수 없습니다.</li>
+          </ul>
+        </div>
+        <div class="install-qr">
+          <img src="./img/leadership/qr.png" alt="리더십저니 앱 다운로드 QR" />
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- ===================== // 탭 패널: 리더십저니 ===================== -->
+
+    <!-- ===================== 탭 패널: 위즈덤스프링 ===================== -->
+    <div class="tab-panel" data-tab-panel="wisdom" hidden>
+    <!-- 메인: 좌측 텍스트 + 우측 단일 히어로 이미지 -->
+    <section class="section-main">
+      <div class="main-inner">
+        <div class="main-text">
+          <div class="main-text-content">
+            <h2 class="main-heading">
+              지혜의 샘,<br />
+              위즈덤스프링
+            </h2>
+            <p class="main-desc">
+              매일의 질문으로 나를 돌아보고,<br />
+              타인의 생각과 엄선된 인문학 콘텐츠를 통해<br />
+              세상의 지혜를 만나는 성찰의 여정을 시작해보세요.
+            </p>
+          </div>
+          <div class="main-store-btns">
+            <!-- Google Play 버튼 -->
+            <a class="store-btn" href="#" aria-label="Google Play로 이동">
+              <span class="store-btn-left">
+                <img class="store-btn-logo" alt="" src="./img/btn/google.svg" />
+                <span class="store-btn-txt">
+                  <span class="store-btn-small">GET IT ON</span>
+                  <img class="store-btn-wordmark" alt="Google Play" src="./img/btn/google Play.svg" />
+                </span>
+              </span>
+              <span class="store-btn-divider" aria-hidden="true"></span>
+              <img class="store-btn-chev" src="./img/btn/ArrowRight.svg" alt="" aria-hidden="true" />
+            </a>
+            <!-- App Store 버튼 -->
+            <a class="store-btn" href="#" aria-label="App Store로 이동">
+              <span class="store-btn-left">
+                <img class="store-btn-apple-logo" alt="" src="./img/btn/Apple.svg" />
+                <span class="store-btn-txt store-btn-txt--tight">
+                  <span class="store-btn-small store-btn-small--muted">Download on the</span>
+                  <span class="store-btn-big">App Store</span>
+                </span>
+              </span>
+              <span class="store-btn-divider" aria-hidden="true"></span>
+              <img class="store-btn-chev" src="./img/btn/ArrowRight.svg" alt="" aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+        <div class="main-phones main-phones--wisdom">
+          <img src="./img/wisdom/hero.png" alt="위즈덤스프링 앱 화면" class="wisdom-hero-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 기능 4종: 아이콘 + 제목 + 설명 -->
+    <section class="section-features">
+      <div class="container features-inner">
+        <div class="feature-card feature-card--anim" data-delay="0">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/wisdom/icon_edit.png" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">오늘의 질문</h3>
+          <p class="feature-desc">하루 한 번 마주하는 나</p>
+        </div>
+        <div class="feature-card feature-card--anim" data-delay="250">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/wisdom/icon_humanities.png" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">인문학 콘텐츠</h3>
+          <p class="feature-desc">문학·역사·철학으로 만나는 세상</p>
+        </div>
+        <div class="feature-card feature-card--anim" data-delay="500">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/wisdom/icon_chat.png" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">생각 나누기</h3>
+          <p class="feature-desc">다른 시선으로 넓히는 사유</p>
+        </div>
+        <div class="feature-card feature-card--anim" data-delay="750">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/wisdom/icon_theme.png" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">테마 학습</h3>
+          <p class="feature-desc">주제별로 완성하는 인문학 여정</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 몰입감을 선사하는 고품질 콘텐츠 -->
+    <section class="section-popular">
+      <div class="section-popular-header">
+        <div class="section-label-wrap">
+          <div class="section-label popular-anim-item">몰입감을 선사하는 고품질 콘텐츠</div>
+        </div>
+        <div class="section-popular-title-wrap">
+          <h2 class="section-popular-title popular-anim-item popular-anim-item--delay">
+            TV 방송 수준의 영상 구성으로<br />
+            생생한 학습 경험을 제공합니다
+          </h2>
+        </div>
+      </div>
+      <div class="popular-video-wrap popular-video-wrap--rounded">
+        <img src="./img/wisdom/video.png" alt="위즈덤스프링 콘텐츠" class="popular-video" />
+        <div class="popular-video-overlay" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 세상을 바라보는 새로운 시각: 10개 카드 가로 스크롤 -->
+    <section class="section-gallery">
+      <div class="section-taste-header">
+        <div class="section-label-wrap">
+          <div class="section-label popular-anim-item">세상을 바라보는 새로운 시각</div>
+        </div>
+        <div class="section-popular-title-wrap">
+          <h2 class="section-taste-title popular-anim-item popular-anim-item--delay">
+            문학, 역사, 철학, 예술을 넘나드는 인문학 테마를 만나보세요.
+          </h2>
+        </div>
+      </div>
+      <div class="gallery-scroll">
+        <div class="gallery-track">
+          <div class="gallery-card"><img src="./img/wisdom/cards/main.png" alt="유토피아" /></div>
+          <div class="gallery-card"><img src="./img/wisdom/cards/main1.png" alt="" /></div>
+          <div class="gallery-card"><img src="./img/wisdom/cards/main2.png" alt="" /></div>
+          <div class="gallery-card"><img src="./img/wisdom/cards/main3.png" alt="" /></div>
+          <div class="gallery-card"><img src="./img/wisdom/cards/main4.png" alt="" /></div>
+          <div class="gallery-card"><img src="./img/wisdom/cards/main5.png" alt="" /></div>
+          <div class="gallery-card"><img src="./img/wisdom/cards/main6.png" alt="" /></div>
+          <div class="gallery-card"><img src="./img/wisdom/cards/main7.png" alt="" /></div>
+          <div class="gallery-card"><img src="./img/wisdom/cards/main8.png" alt="" /></div>
+          <!-- 무한 루프용 복제 -->
+          <div class="gallery-card" aria-hidden="true"><img src="./img/wisdom/cards/main.png" alt="" /></div>
+          <div class="gallery-card" aria-hidden="true"><img src="./img/wisdom/cards/main1.png" alt="" /></div>
+          <div class="gallery-card" aria-hidden="true"><img src="./img/wisdom/cards/main2.png" alt="" /></div>
+          <div class="gallery-card" aria-hidden="true"><img src="./img/wisdom/cards/main3.png" alt="" /></div>
+          <div class="gallery-card" aria-hidden="true"><img src="./img/wisdom/cards/main4.png" alt="" /></div>
+          <div class="gallery-card" aria-hidden="true"><img src="./img/wisdom/cards/main5.png" alt="" /></div>
+          <div class="gallery-card" aria-hidden="true"><img src="./img/wisdom/cards/main6.png" alt="" /></div>
+          <div class="gallery-card" aria-hidden="true"><img src="./img/wisdom/cards/main7.png" alt="" /></div>
+          <div class="gallery-card" aria-hidden="true"><img src="./img/wisdom/cards/main8.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 후기 배너 -->
+    <section class="section-testimonial">
+      <div class="testimonial-review">
+          <div class="testimonial-slide">
+            <div class="testimonial-stars-wrap">
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+            </div>
+            <p class="testimonial-quote">출퇴근 10분, 인문학을 쌓는 가장 쉬운 방법</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- 앱 설치 방법 -->
+    <section class="section-install">
+      <div class="install-card">
+        <div class="install-content">
+          <div class="install-text-block">
+            <h2 class="install-title">위즈덤스프링 앱 설치 방법</h2>
+            <div class="install-form-block">
+              <p class="install-form-label">앱 설치 문자받기</p>
+              <div class="install-form">
+                <input type="tel" class="install-input" placeholder="휴대폰 번호를 입력해주세요" maxlength="11" />
+                <button type="button" class="install-btn">SMS 받기</button>
+              </div>
+            </div>
+          </div>
+          <ul class="install-notice">
+            <li>문자 전송은 무료입니다.</li>
+            <li>문자 전송 시 입력하신 번호는 URL 전송용으로만 사용됩니다.</li>
+            <li>아이폰 앱 스토어에서는 다운로드 받으실 수 없습니다.</li>
+          </ul>
+        </div>
+        <div class="install-qr">
+          <img src="./img/wisdom/qr.png" alt="위즈덤스프링 앱 다운로드 QR" />
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- ===================== // 탭 패널: 위즈덤스프링 ===================== -->
+
+    <!-- ===================== 탭 패널: 탤런트뱅크 ===================== -->
+    <div class="tab-panel" data-tab-panel="talentbank" hidden>
+    <!-- 메인: 좌측 텍스트 + 우측 휴대폰 2대 -->
+    <section class="section-main">
+      <div class="main-inner">
+        <div class="main-text">
+          <div class="main-text-content">
+            <h2 class="main-heading">
+              전문가매칭 플랫폼<br />
+              탤런트뱅크
+            </h2>
+            <p class="main-desc">
+              대기업 팀장, 중소기업 임원급 이상의<br />
+              수천 명의 전문가 프로필을 확인하세요!<br />
+              당신이 찾는 전문가님을 지금 바로 만나보실 수 있습니다.
+            </p>
+          </div>
+          <div class="main-store-btns">
+            <!-- Google Play 버튼 -->
+            <a class="store-btn" href="#" aria-label="Google Play로 이동">
+              <span class="store-btn-left">
+                <img class="store-btn-logo" alt="" src="./img/btn/google.svg" />
+                <span class="store-btn-txt">
+                  <span class="store-btn-small">GET IT ON</span>
+                  <img class="store-btn-wordmark" alt="Google Play" src="./img/btn/google Play.svg" />
+                </span>
+              </span>
+              <span class="store-btn-divider" aria-hidden="true"></span>
+              <img class="store-btn-chev" src="./img/btn/ArrowRight.svg" alt="" aria-hidden="true" />
+            </a>
+            <!-- App Store 버튼 -->
+            <a class="store-btn" href="#" aria-label="App Store로 이동">
+              <span class="store-btn-left">
+                <img class="store-btn-apple-logo" alt="" src="./img/btn/Apple.svg" />
+                <span class="store-btn-txt store-btn-txt--tight">
+                  <span class="store-btn-small store-btn-small--muted">Download on the</span>
+                  <span class="store-btn-big">App Store</span>
+                </span>
+              </span>
+              <span class="store-btn-divider" aria-hidden="true"></span>
+              <img class="store-btn-chev" src="./img/btn/ArrowRight.svg" alt="" aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+        <div class="main-phones main-phones--talentbank">
+          <div class="talentbank-hero-visual">
+            <img src="./img/talentbank/phone1.png" alt="탤런트뱅크 전문가 프로필 화면" class="talentbank-hero-phone talentbank-hero-phone--a" />
+            <img src="./img/talentbank/phone2.png" alt="탤런트뱅크 홈 화면" class="talentbank-hero-phone talentbank-hero-phone--b" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 기능 4종: 아이콘 + 제목 + 설명 -->
+    <section class="section-features">
+      <div class="container features-inner">
+        <div class="feature-card feature-card--anim" data-delay="0">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/talentbank/icon1_chat.png" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">전문가 자문</h3>
+          <p class="feature-desc">필요한 순간 만나는 전문가</p>
+        </div>
+        <div class="feature-card feature-card--anim" data-delay="250">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/talentbank/icon2_folder.png" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">프로젝트 매칭</h3>
+          <p class="feature-desc">기업 과제에 맞는 전문가 연결</p>
+        </div>
+        <div class="feature-card feature-card--anim" data-delay="500">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/talentbank/icon3_seminar.png" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">비즈니스 세미나</h3>
+          <p class="feature-desc">최신 트렌드와 실무 인사이트</p>
+        </div>
+        <div class="feature-card feature-card--anim" data-delay="750">
+          <div class="feature-icon" aria-hidden="true">
+            <img src="./img/talentbank/icon4_article.png" alt="" width="80" height="80" />
+          </div>
+          <h3 class="feature-title">전문 아티클</h3>
+          <p class="feature-desc">전문가의 경험과 실무 노하우</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 기업·전문가 매칭 플랫폼 -->
+    <section class="section-popular">
+      <div class="section-popular-header">
+        <div class="section-label-wrap">
+          <div class="section-label popular-anim-item">기업·전문가 매칭 플랫폼</div>
+        </div>
+        <div class="section-popular-title-wrap">
+          <h2 class="section-popular-title popular-anim-item popular-anim-item--delay">
+            TV 방송 수준의 영상 구성으로<br />
+            생생한 학습 경험을 제공합니다
+          </h2>
+        </div>
+      </div>
+      <div class="popular-video-wrap">
+        <video
+          class="popular-video"
+          src="./img/talentbank/talentbank.mp4"
+          width="1280"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+        <div class="popular-video-overlay" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 전문분야 소개: 10개 카드 가로 스크롤 -->
+    <section class="section-gallery">
+      <div class="section-taste-header">
+        <div class="section-label-wrap">
+          <div class="section-label popular-anim-item">전문분야 소개</div>
+        </div>
+        <div class="section-popular-title-wrap">
+          <h2 class="section-taste-title popular-anim-item popular-anim-item--delay">
+            기업의 다양한 과제에 필요한 분야별 전문가를 만나보세요
+          </h2>
+        </div>
+      </div>
+      <div class="gallery-scroll">
+        <div class="gallery-track">
+          <div class="gallery-card"><img src="./img/talentbank/cards/main1.png" alt="경영전략·신사업" /></div>
+          <div class="gallery-card"><img src="./img/talentbank/cards/main2.png" alt="영업·구매·유통" /></div>
+          <div class="gallery-card"><img src="./img/talentbank/cards/main3.png" alt="영업·구매·유통" /></div>
+          <div class="gallery-card"><img src="./img/talentbank/cards/main4.png" alt="재무·투자" /></div>
+          <div class="gallery-card"><img src="./img/talentbank/cards/main5.png" alt="마케팅" /></div>
+          <div class="gallery-card"><img src="./img/talentbank/cards/main6.png" alt="엔지니어링" /></div>
+          <div class="gallery-card"><img src="./img/talentbank/cards/main7.png" alt="IT" /></div>
+          <div class="gallery-card"><img src="./img/talentbank/cards/main8.png" alt="디자인패션" /></div>
+          <div class="gallery-card"><img src="./img/talentbank/cards/main9.png" alt="법무·대정부" /></div>
+          <div class="gallery-card"><img src="./img/talentbank/cards/main10.png" alt="법무·대정부" /></div>
+          <!-- 무한 루프용 복제 -->
+          <div class="gallery-card" aria-hidden="true"><img src="./img/talentbank/cards/main1.png" alt="" /></div>
+          <div class="gallery-card" aria-hidden="true"><img src="./img/talentbank/cards/main2.png" alt="" /></div>
+          <div class="gallery-card" aria-hidden="true"><img src="./img/talentbank/cards/main3.png" alt="" /></div>
+          <div class="gallery-card" aria-hidden="true"><img src="./img/talentbank/cards/main4.png" alt="" /></div>
+          <div class="gallery-card" aria-hidden="true"><img src="./img/talentbank/cards/main5.png" alt="" /></div>
+          <div class="gallery-card" aria-hidden="true"><img src="./img/talentbank/cards/main6.png" alt="" /></div>
+          <div class="gallery-card" aria-hidden="true"><img src="./img/talentbank/cards/main7.png" alt="" /></div>
+          <div class="gallery-card" aria-hidden="true"><img src="./img/talentbank/cards/main8.png" alt="" /></div>
+          <div class="gallery-card" aria-hidden="true"><img src="./img/talentbank/cards/main9.png" alt="" /></div>
+          <div class="gallery-card" aria-hidden="true"><img src="./img/talentbank/cards/main10.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 후기 배너 -->
+    <section class="section-testimonial">
+      <div class="testimonial-review">
+          <div class="testimonial-slide">
+            <div class="testimonial-stars-wrap">
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+              <svg class="t-star" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2l2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5L2.5 8.9l6.6-.9L12 2z" fill="#FA2E43"/></svg>
+            </div>
+            <p class="testimonial-quote">필요한 순간, 딱 맞는 전문가를 만날 수 있었습니다</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- 앱 설치 방법 -->
+    <section class="section-install">
+      <div class="install-card">
+        <div class="install-content">
+          <div class="install-text-block">
+            <h2 class="install-title">탤런트뱅크 앱 설치 방법</h2>
+            <div class="install-form-block">
+              <p class="install-form-label">앱 설치 문자받기</p>
+              <div class="install-form">
+                <input type="tel" class="install-input" placeholder="휴대폰 번호를 입력해주세요" maxlength="11" />
+                <button type="button" class="install-btn">SMS 받기</button>
+              </div>
+            </div>
+          </div>
+          <ul class="install-notice">
+            <li>문자 전송은 무료입니다.</li>
+            <li>문자 전송 시 입력하신 번호는 URL 전송용으로만 사용됩니다.</li>
+            <li>아이폰 앱 스토어에서는 다운로드 받으실 수 없습니다.</li>
+          </ul>
+        </div>
+        <div class="install-qr">
+          <img src="./img/talentbank/qr.png" alt="탤런트뱅크 앱 다운로드 QR" />
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- ===================== // 탭 패널: 탤런트뱅크 ===================== -->
   </div>
   <script>
+    // 탭 전환 시 숨겨져 있던 패널의 관찰 대상을 강제로 재관찰시키기 위한 레지스트리.
+    // (display:none 상태로 최초 observe()된 요소는 다시 보여져도 브라우저가
+    //  IntersectionObserver 콜백을 재계산해주지 않는 경우가 있어 직접 재연결한다.)
+    const reconnectors = [];
+
     // 기능 카드 순차 등장 — IntersectionObserver
     (function () {
       const cards = document.querySelectorAll('.feature-card--anim');
@@ -354,6 +1480,12 @@
       );
 
       cards.forEach((card) => observer.observe(card));
+      reconnectors.push((root) => {
+        root.querySelectorAll('.feature-card--anim:not(.is-visible)').forEach((el) => {
+          observer.unobserve(el);
+          observer.observe(el);
+        });
+      });
     })();
     // 티빙 스타일 텍스트 슬라이드업 — IntersectionObserver
     (function () {
@@ -376,43 +1508,99 @@
       );
 
       items.forEach((item) => observer.observe(item));
+      reconnectors.push((root) => {
+        root.querySelectorAll('.popular-anim-item:not(.is-visible)').forEach((el) => {
+          observer.unobserve(el);
+          observer.observe(el);
+        });
+      });
     })();
 
-    // 후기 순차 등장 + 3초 전환
+    // 후기 스크롤 등장 + 3초 전환 (탭 패널별 독립 동작, 화면에 보일 때 시작)
     (function () {
-      const slides = document.querySelectorAll('.testimonial-slide');
-      if (!slides.length) return;
+      document.querySelectorAll('.section-testimonial').forEach((section) => {
+        const slides = section.querySelectorAll('.testimonial-slide');
+        if (!slides.length) return;
 
-      let current = 0;
+        let current = 0;
+        let started = false;
 
-      function showSlide(index) {
-        slides.forEach((s, i) => {
-          s.classList.remove('is-active', 'is-exit');
-          if (i === index) {
-            s.classList.add('is-active');
+        function showSlide(index) {
+          slides.forEach((s, i) => {
+            s.classList.remove('is-active', 'is-exit');
+            if (i === index) {
+              s.classList.add('is-active');
+            }
+          });
+        }
+
+        function nextSlide() {
+          // 현재 슬라이드 퇴장
+          slides[current].classList.add('is-exit');
+          slides[current].classList.remove('is-active');
+
+          // 다음 슬라이드
+          current = (current + 1) % slides.length;
+
+          // 퇴장 애니메이션 후 등장
+          setTimeout(() => {
+            showSlide(current);
+          }, 400);
+        }
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting && !started) {
+                started = true;
+                // 화면에 들어오는 시점에 첫 슬라이드 등장
+                showSlide(0);
+                // 슬라이드가 2개 이상일 때만 자동 전환
+                if (slides.length > 1) {
+                  setInterval(nextSlide, 5000);
+                }
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+
+        observer.observe(section);
+        reconnectors.push((root) => {
+          if (started || !root.contains(section)) return;
+          observer.unobserve(section);
+          observer.observe(section);
+        });
+      });
+    })();
+
+    // 앱 탭 전환
+    (function () {
+      const tabs = document.querySelectorAll('.app-tab[data-tab]');
+      const panels = document.querySelectorAll('.tab-panel');
+      if (!tabs.length || !panels.length) return;
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          const key = tab.dataset.tab;
+          document.querySelectorAll('.app-tab').forEach((t) => {
+            t.classList.toggle('active', t === tab);
+          });
+          panels.forEach((panel) => {
+            panel.hidden = panel.dataset.tabPanel !== key;
+          });
+
+          // 방금 보여진 패널 안의 스크롤 등장 요소들을 재관찰시켜
+          // 숨김 상태에서 놓쳤던 최초 교차 판정을 다시 계산하게 한다.
+          const shown = document.querySelector(`.tab-panel[data-tab-panel="${key}"]`);
+          if (shown) {
+            requestAnimationFrame(() => {
+              reconnectors.forEach((reconnect) => reconnect(shown));
+            });
           }
         });
-      }
-
-      function nextSlide() {
-        // 현재 슬라이드 퇴장
-        slides[current].classList.add('is-exit');
-        slides[current].classList.remove('is-active');
-
-        // 다음 슬라이드
-        current = (current + 1) % slides.length;
-
-        // 퇴장 애니메이션 후 등장
-        setTimeout(() => {
-          showSlide(current);
-        }, 400);
-      }
-
-      // 첫 번째 슬라이드 즉시 등장
-      showSlide(0);
-
-      // 3초마다 전환
-      setInterval(nextSlide, 5000);
+      });
     })();
   </script>
 </body>
